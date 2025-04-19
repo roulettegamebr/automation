@@ -6,7 +6,7 @@ import random
 import math
 import uiautomator2 as u2
 
-ADB_PATH = "C:\adb"
+ADB_PATH = "adb"
 ciclos_ativos = {}
 stop_flags = {}
 ciclos_contador = {}
