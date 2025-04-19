@@ -44,7 +44,7 @@ def aceitar_termos_navegador(d, device_id, text_widget):
                 x, y = button.center()
                 d.click(x, y)
                 log(text_widget, f"{device_id}: Botão 'Agree' ({res_id}) clicado em ({x},{y})")
-                time.sleep(2)
+                time.sleep(5)  # Espera após o clique no Agree
 
         continuar = d(text="Continue loading")
         if continuar.exists(timeout=5):
@@ -222,6 +222,9 @@ def criar_interface():
 
     tk.Button(frame, text="🔄 Atualizar", command=atualizar_lista).pack(pady=5)
     tk.Button(frame, text="▶ Iniciar", command=iniciar_automacao).pack(pady=5)
+
+    # Exibe versão do bot
+    tk.Label(root, text="Bot V1.2", font=("Segoe UI", 9, "italic"), fg="gray").pack(pady=(0, 10))
 
     atualizar_lista()
     root.mainloop()
