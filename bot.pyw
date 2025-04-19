@@ -180,15 +180,15 @@ def criar_variaveis_configuraveis():
     global espera_min_var, espera_max_var, timeout_min_var, timeout_max_var
     global carregar_min_var, carregar_max_var, interacao_min_var, interacao_max_var, redefinir_id_var
 
-    espera_min_var = tk.IntVar(value=8)
-    espera_max_var = tk.IntVar(value=16)
+    espera_min_var = tk.IntVar(value=16)
+    espera_max_var = tk.IntVar(value=20)
     timeout_min_var = tk.IntVar(value=20)
     timeout_max_var = tk.IntVar(value=40)
-    carregar_min_var = tk.IntVar(value=5)
-    carregar_max_var = tk.IntVar(value=12)
+    carregar_min_var = tk.IntVar(value=10)
+    carregar_max_var = tk.IntVar(value=15)
     interacao_min_var = tk.IntVar(value=15)
-    interacao_max_var = tk.IntVar(value=30)
-    redefinir_id_var = tk.IntVar(value=2)
+    interacao_max_var = tk.IntVar(value=60)
+    redefinir_id_var = tk.IntVar(value=1)
 
 def criar_interface():
     global listbox
